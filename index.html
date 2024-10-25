@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body and Background */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #e0eafc, #cfdef3);
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        /* Container with rounded edges and shadow */
+        .container {
+            display: flex;
+            max-width: 900px;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Sidebar for Avatar and Description */
+        .sidebar {
+            background: linear-gradient(135deg, #6a89cc, #b8e994);
+            color: white;
+            padding: 30px 20px;
+            width: 250px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Avatar Styling */
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            border: 3px solid white;
+        }
+
+        /* Description styling */
+        .description h2 {
+            font-size: 1.4em;
+            margin-bottom: 10px;
+        }
+
+        /* Main Content Area */
+        .content {
+            padding: 30px;
+            flex: 1;
+        }
+
+        .content section {
+            margin-bottom: 25px;
+        }
+
+        .content h2 {
+            font-size: 1.6em;
+            color: #6a89cc;
+            margin-bottom: 8px;
+        }
+
+        .content p {
+            color: #555;
+            margin-bottom: 12px;
+        }
+
+        /* Links styling */
+        .content a {
+            color: #6a89cc;
+            text-decoration: none;
+        }
+
+        .content a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+                padding: 20px;
+            }
+
+            .content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Left Sidebar with Avatar and Description -->
+        <aside class="sidebar">
+            <img src="./fooyun.png" alt="fooyun" class="avatar">
+            <div class="description">
+                <h2>fooyun</h2>
+                <p>Developer worked for JD & Tencent & Alibaba</p>
+                <p>Passionate about technology and innovation.</p>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="content">
+            <section>
+                <h2>About Me</h2>
+                <p>Code for Fun. Code for Life.</p>
+            </section>
+            <section>
+                <h2>Experience</h2>
+                <p>I have extensive experience in front-end product development within the internet sector and have also engaged in some full-stack work.</p>
+                <p>Technologies of Interest: HTML | CSS | JavaScript | Typescript | NodeJS | Go | Java | Rust | Shell | SQL</p>
+            </section>
+            <section>
+                <h2>Contact</h2>
+                <p>Email: fooyun.code@outlook.com</p>
+                <p>Github: <a href="https://github.com/fooyun">fooyun</a></p>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
